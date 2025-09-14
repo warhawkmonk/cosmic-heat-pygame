@@ -11,6 +11,8 @@ def music_background():
 
 
 def show_game_over(score):
+    if not pygame.display.get_init():
+        return
     font = pygame.font.SysFont('Impact', 50)
     font_small = pygame.font.SysFont('Impact', 30)
     text = font.render("GAME OVER", True, (139, 0, 0))

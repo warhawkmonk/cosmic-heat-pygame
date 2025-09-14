@@ -66,8 +66,7 @@ while show_menu:
                 explosion_sound.play()
                 animate_screen()
                 show_menu = False
-                import main
-                main.main()
+                # Start the game here, but do NOT import main or call main.main()
                 break
             elif quit_button_rect.collidepoint(x, y):
                 pygame.quit()
